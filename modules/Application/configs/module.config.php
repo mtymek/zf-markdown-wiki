@@ -1,5 +1,6 @@
 <?php
 return array(
+    'wiki_page_directory' => __DIR__ . '/../../../data/markdown',
     'layout' => 'layouts/layout.phtml',
     'di'     => array(
         'instance' => array(
@@ -45,5 +46,16 @@ return array(
                 ),
             ),
         ),
+        'wiki' => array(
+            'type'    => 'Zend\Mvc\Router\Http\Regex',
+            'options' => array(
+                'regex' => '/wiki/(?P<location>.+)',
+                'spec' => '/wiki/%location%',
+                'defaults' => array(
+                    'controller' => 'index',
+                    'action' => 'wiki'
+                )
+            )
+        )
     ),
 );
