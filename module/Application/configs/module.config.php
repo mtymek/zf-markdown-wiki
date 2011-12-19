@@ -1,8 +1,9 @@
 <?php
 return array(
     'wiki_page_directory' => __DIR__ . '/../../../data/markdown',
-    'layout' => 'layouts/layout.phtml',
-    'di'     => array(
+    'layout'                => 'layouts/layout.phtml',
+    'display_exceptions'    => true,
+    'di'                    => array(
         'instance' => array(
             'alias' => array(
                 'index' => 'Application\Controller\IndexController',
