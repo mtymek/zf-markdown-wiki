@@ -4,3 +4,6 @@
 [submodule "modules/Bootstrap"]
 	path = module/Bootstrap
 	url = https://github.com/twitter/bootstrap.git
+[submodule "module/EdpMarkdown"]
+	path = module/EdpMarkdown
+	url = git@github.com:mtymek/EdpMarkdown.git
