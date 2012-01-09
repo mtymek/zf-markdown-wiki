@@ -75,6 +75,9 @@ class Module implements AutoloaderProvider
         $view->plugin('headTitle')->setSeparator(' - ')
                                   ->setAutoEscape(false)
                                   ->append('Application');
+
+        $view->plugin('basePath')->setBasePath($app->getRequest()->getBaseUrl());
+
         $this->view = $view;
         return $view;
     }

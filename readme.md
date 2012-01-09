@@ -1,1 +1,1 @@
-This project is an effect of 2 hour play with Zend Framework 2.
+Simple Markdown Wiki engine based on Zend Framework 2.
